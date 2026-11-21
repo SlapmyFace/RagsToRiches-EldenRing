@@ -566,7 +566,7 @@ function getRandomElementFrom(list, nestedArrayMode = false)
         }
         else if (check < 0.2)
         {
-            randomItem = "Any piece of " + filteredList[0] + ":\n" + filteredList.join(",\n")
+            randomItem = "Any piece of " + randomNestedList[0] + ":\n" + filteredList.join(",\n")
         }
         else {
             if (randomNestedList[0])
