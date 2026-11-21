@@ -47,24 +47,24 @@
             <br>
 
                 <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+					
+                    <input type="checkbox" class="btn-check" id="v_useDLC" autocomplete="off" checked>
+                    <label class="btn btn-outline-secondary" for="v_MfContinue" title="Include DLC Items on rolls">Include DLC</label>
 
                     <input type="checkbox" class="btn-check" id="v_SpellRoll" autocomplete="off" checked>
                     <label class="btn btn-outline-secondary" for="v_SpellRoll" title="Includes sorcery in spell rewards">Sorcery rolling</label>
 
                     <input type="checkbox" class="btn-check" id="v_IncantRoll" autocomplete="off" checked>
                     <label class="btn btn-outline-secondary" for="v_IncantRoll" title="Includes incantations in spell rewards">Incant rolling</label>
+					
+                    <input type="checkbox" class="btn-check" id="v_CraftingMaterials" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="v_CraftingMaterials" title="Roll crafting materials instead of consumables">Crafting Materials instead of Consumables</label>
 
                     <input type="checkbox" class="btn-check" id="v_AddReward" autocomplete="off" checked>
                     <label class="btn btn-outline-secondary" for="v_AddReward" title="Adds up rewards instead of setting them back to 0 before rerolling">Add up rewards</label>
 
                     <input type="checkbox" class="btn-check" id="v_SkipChallenges" autocomplete="off">
                     <label class="btn btn-outline-secondary" for="v_SkipChallenges" title="Skip challenges in misfortunes">No Challenges</label>
-
-                    <input type="checkbox" class="btn-check" id="v_CraftingMaterials" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="v_CraftingMaterials" title="Roll crafting materials instead of consumables">Crafting Materials instead of Consumables</label>
-
-                    <input type="checkbox" class="btn-check" id="v_MfContinue" autocomplete="off" checked>
-                    <label class="btn btn-outline-secondary" for="v_MfContinue" title="Blocks Win or Lose click until misfortunes have all been used">No Reroll on unclaimed Misfortunes</label>
 
                     <input type="checkbox" class="btn-check" id="v_Continue" autocomplete="off">
                     <label class="btn btn-outline-secondary" for="v_Continue" title="Blocks Win or Lose click until everything has been used">No Reroll on unclaimed Rewards</label>
