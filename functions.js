@@ -367,7 +367,7 @@ function useReward(rarity) {
 		fillCard(imgType, randomItem, randomItem, randomItem);
 	}
 	else if (rarity == "consumable") {
-		fillCard(imgType, randomItem, randomItem, randomItem.replace(/\s*(?:\(\d+x\)|\d+)$/, "");
+		fillCard(imgType, randomItem, randomItem, randomItem.replace(/\s*(?:\(\d+x\)|\d+)$/, ""));
 	}
 	else {
 		fillCard(imgType, randomItem, randomItem);
