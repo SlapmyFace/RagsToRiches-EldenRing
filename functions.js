@@ -411,7 +411,7 @@ function fillCard(rarity, name, innerText, optionalWikisearch = "") {
     if (rarity != "misfortune") {
 		if (optionalWikisearch) {
 			wikiLink.hidden = false;
-			document.getElementById("wikiLink").href = "https://eldenring.wiki.fextralife.com/index.php?search=" + optionalWikisearch);
+			document.getElementById("wikiLink").href = "https://eldenring.wiki.fextralife.com/index.php?search=" + optionalWikisearch;
 			document.getElementById("cardText").innerText = innerText;
 		} else {      
 			wikiLink.hidden = true;
