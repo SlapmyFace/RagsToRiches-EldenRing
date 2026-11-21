@@ -362,8 +362,13 @@ function useReward(rarity) {
     currentMisfortunes.push(["Add: " + randomItem, "Add: " + randomItem, 1]);
 
     fillEffect();
-
-    fillCard(imgType, randomItem, randomItem);
+	if (rarity == "armor" || rarity == "weapon" || rarity == "spell" || rarity == "legendary")
+	{
+		fillCard(imgType, randomItem, randomItem, randomItem);
+	}
+	else {
+		fillCard(imgType, randomItem, randomItem);
+	}
 }
 
 function fixNameFormat(string) {
@@ -386,7 +391,7 @@ function fixNameFormat(string) {
     return newString;
 }
 
-function fillCard(rarity, name, innerText) {
+function fillCard(rarity, name, innerText, optionalWikisearch = "") {
 	
 	fixedRarity = rarity;
 	
@@ -403,13 +408,16 @@ function fillCard(rarity, name, innerText) {
     // document.getElementById("cardTitle").innerText = "ELDEN RING";
     document.getElementById("cardTitle").style["text-shadow"] = "0 0 " + (rarity == "legendary" | rarity == "misfortune" ? "8px" : "4px") + " " + colors[rarity];
 	
-    if (rarity == "weapon" || rarity == "talisman" || rarity == "legendary" || rarity == "spell") {
-        document.getElementById("cardText").innerText = innerText + '<a href="https://eldenring.wiki.fextralife.com/index.php?search=' + fixNameFormat(name) + '" target="_blank" rel="noopener noreferrer" aria-label="Search the Elden Ring Wiki">➜</a>';
-        document.getElementById("cardImgReward").style.display = "block";
-		document.getElementById("cardImgReward").src = "img/" + rarity + ".png"
-        // document.getElementById("cardImgReward").src = "items/" + mode + "/" + fixNameFormat(name) + ".webp";
-    } else if (rarity != "misfortune") {
-        document.getElementById("cardText").innerText = innerText;
+    if (rarity != "misfortune") {
+		if (optionalWikisearch) {
+			wikiLink.hidden = false;
+			document.getElementById("wikiLink").href = "https://eldenring.wiki.fextralife.com/index.php?search=" + optionalWikisearch);
+			document.getElementById("cardText").innerText = innerText;
+		} else {      
+			wikiLink.hidden = true;
+      		wikiLink.removeAttribute("href");
+			document.getElementById("cardText").innerText = innerText;
+		}
         document.getElementById("cardImgReward").style.display = "block";
 		document.getElementById("cardImgReward").src = "img/" + rarity + ".png"
         // document.getElementById("cardImgReward").src = "items/" + mode + "/" + fixNameFormat(name) + ".webp";
