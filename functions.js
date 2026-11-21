@@ -291,28 +291,46 @@ function useReward(rarity) {
         case "consumable":
             if (getValue("CraftingMaterials")) {
                 list = craftingMaterialsList;
+				if (getValue("useDLC")) {
+            		list.push(...uncraftablesListDLC);
+				}
             }
             else {
-                list = consumablesList;
+                list = consumablesList;				
+				if (getValue("useDLC")) {
+            		list.push(...consumablesListDLC);
+				}
             }
             list.push(...uncraftablesList);
 
             imgType = rarity;
             break;
         case "weapon":
-            list = weaponsList;
+            list = weaponsList;		
+			if (getValue("useDLC")) {
+				list.push(...weaponsListDLC);
+			}
             imgType = rarity;
             break;
         case "talisman":
             list = talismansList;
+			if (getValue("useDLC")) {
+				list.push(...talismansListDLC);
+			}
             imgType = rarity;
             break;g
         case "legendary":
             list = legendaryList;
+			if (getValue("useDLC")) {
+				list.push(...legendaryListDLC);
+			}
             imgType = rarity;
             break;
         case "armor":
             list = armorList;
+			if (getValue("useDLC")) {
+				list.push(...armorListDLC);
+			}
             imgType = rarity;
             useNestedList = true;
             break;
@@ -327,17 +345,26 @@ function useReward(rarity) {
                 if (check < 0.33) {
                     if (getValue("SpellRoll")) {
                         list = spellList;
+						if (getValue("useDLC")) {
+							list.push(...spellListDLC);
+						}
                         imgType = "sorcery";
                         chosen = true;
                     }
                 } else if (check < 0.66) {
                     if (getValue("IncantRoll")) {
                         list = miracleList;
+						if (getValue("useDLC")) {
+							list.push(...miracleListDLC);
+						}
                         imgType = "miracle";
                         chosen = true;
                     }
                 } else {
                     list = ashOfWarList;
+						if (getValue("useDLC")) {
+							list.push(...ashOfWarListDLC);
+						}
                     imgType = "pyromancy";
                     chosen = true;
                 }
