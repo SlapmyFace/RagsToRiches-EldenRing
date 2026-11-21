@@ -55,18 +55,6 @@ consumablesList = [
 "Drawstring Soporific Grease (3x)",
 "Freezing Grease (2x)",
 "Shield Grease (3x)",
-"Messmerfire Grease",
-"Drawstring Messmerfire Grease",
-"Dragonbolt Grease",
-"Drawstring Dragonbolt Grease",
-"Royal Magic Grease",
-"Drawstring Royal Magic Grease",
-"Golden Grease",
-"Drawstring Golden Grease",
-"Eternal Sleep Grease",
-"Drawstring Eternal Sleep Grease",
-"Dragon Communion Grease",
-"Drawstring Dragon Communion Grease",
 "Clarifying Cured Meat",
 "Clarifying White Cured Meat",
 "Immunizing Cured Meat",
@@ -93,6 +81,30 @@ consumablesList = [
 "Soap (3x)",
 "Soft Cotton (3x)",
 "Warming Stone (3x)",
+"Spellproof Dried Liver (2x)",
+"Fireproof Dried Liver (2x)",
+"Lightningproof  Dried Liver (2x)",
+"Holyproof Dried Liver (2x)"
+];
+
+consumablesListDLC = [
+"Messmerfire Grease",
+"Drawstring Messmerfire Grease",
+"Dragonbolt Grease",
+"Drawstring Dragonbolt Grease",
+"Royal Magic Grease",
+"Drawstring Royal Magic Grease",
+"Golden Grease",
+"Drawstring Golden Grease",
+"Eternal Sleep Grease",
+"Drawstring Eternal Sleep Grease",
+"Dragon Communion Grease",
+"Drawstring Dragon Communion Grease",
+"Spellproof Pickled Liver",
+"Fireproof Pickled Liver",
+"Lightningproof Pickled Liver",
+"Holyproof Pickled Liver",
+"Opaline Pickled Liver",
 "Hefty Fire Pot",
 "Hefty Rock Pot",
 "Hefty Lightning Pot",
@@ -115,17 +127,8 @@ consumablesList = [
 "Dragon Communion Flesh",
 "Dragonscale Flesh",
 "Fingerprint Nostrum",
-"Spellproof Dried Liver (2x)",
-"Fireproof Dried Liver (2x)",
-"Lightningproof  Dried Liver (2x)",
-"Holyproof Dried Liver (2x)",
-"Spellproof Pickled Liver",
-"Fireproof Pickled Liver",
-"Lightningproof Pickled Liver",
-"Holyproof Pickled Liver",
-"Opaline Pickled Liver",
 "Well-Pickled Turtle Neck"
-];
+]
 
 uncraftablesList = [
 "Boiled Prawn (2x)",
@@ -143,7 +146,7 @@ uncraftablesList = [
 "Glintstone Scrap (5x) ",
 "Large Glintstone Scrap (2x)",
 "Starlight Shard"
-]
+];
 
 craftingMaterialsList = [
 "Aeonian Butterfly",
@@ -211,7 +214,10 @@ craftingMaterialsList = [
 "Trina's Lily",
 "Turtle Neck Meat",
 "Volcanic Stone",
-"Yellow Ember",
+"Yellow Ember"
+];
+
+craftingMaterialsListDLC = [
 "Spiritgrave Stone",
 "Gas Stone (2x)",
 "Nailstone (2x)",
@@ -250,17 +256,9 @@ craftingMaterialsList = [
 "Blessed Bone Shard",
 "Horn-Strewn Excrement",
 "Swollen Grape"
-]
+];
 
 weaponsList = [
-"Idus Sword",
-"Hefty Scimitar",
-"Reed Great Katana",
-"Leontiel's Greatsword",
-"Reverse-Bladed Sword",
-"Golden Order Flail",
-"Ritual Thrusting Shield",
-"Silver Grooved Shield",
 "Omen Bairn",
 "Wraith Calling Bell",
 "Ancestral Infant's Head",
@@ -607,6 +605,20 @@ weaponsList = [
 "Haligtree Crest Greatshield",
 "Wooden Greatshield",
 "Lordsworn's Shield",
+"Any Staff",
+"Any Seal",
+"Idus Sword",
+"Hefty Scimitar",
+"Reed Great Katana",
+"Leontiel's Greatsword",
+"Reverse-Bladed Sword",
+"Golden Order Flail",
+"Ritual Thrusting Shield",
+"Silver Grooved Shield",
+"Morgott's Cursed Sword"
+];
+
+weaponsListDLC = [
 "Dueling Shield",
 "Carian Thrusting Shield",
 "Dryleaf Arts",
@@ -696,10 +708,8 @@ weaponsList = [
 "Wolf Crest Shield",
 "Messmer Soldier Shield",
 "Verdigris Greatshield",
-"Black Steel Greatshield",
-"Any Staff",
-"Any Seal"
-]
+"Black Steel Greatshield"
+];
 
 talismansList = [
 "Crimson Amber Medallion",
@@ -780,9 +790,25 @@ talismansList = [
 "Pearldrake Talisman",
 "Pearldrake Talisman +1",
 "Pearldrake Talisman +2",
+"Taker's Cameo",
+"Godskin Swaddling Cloth",
+"Assassin's Crimson Dagger",
+"Assassin's Cerulean Dagger",
+"Crepus's Vial",
+"Concealing Veil",
+"Carian Filigreed Crest",
+"Longtail Cat Talisman",
+"Ancestral Spirit's Horn",
+"Greatshield Talisman",
+"Ritual Shield Talisman",
+"Crucible Knot Talisman",
 "Crucible Scale Talisman",
 "Crucible Feather Talisman",
 "Blue-Feathered Branchsword",
+"Blessed Dew Talisman"
+];
+
+talismanListDLC = [
 "Talisman of Lord's Bestowal",
 "Dried Bouquet",
 "Ailment Talisman",
@@ -799,29 +825,15 @@ talismansList = [
 "Beloved Stardust",
 "Talisman of All Crucibles",
 "Fine Crucible Feather Talisman",
-"Ritual Shield Talisman",
-"Greatshield Talisman",
-"Crucible Knot Talisman",
-"Crimson Seed Talisman",
-"Cerulean Seed Talisman",
-"Blessed Dew Talisman",
+"Crimson Seed Talisman +1",
+"Cerulean Seed Talisman +1",
 "Blessed Blue Dew Talisman",
 "Retaliatory Crossed-Tree",
 "Lacerating Crossed-Tree",
 "Aged One's Exultation",
-"Taker's Cameo",
-"Godskin Swaddling Cloth",
-"Assassin's Crimson Dagger",
-"Assassin's Cerulean Dagger",
-"Crepus's Vial",
-"Concealing Veil",
-"Carian Filigreed Crest",
-"Longtail Cat Talisman",
 "Verdigris Discus",
-"Crusade Insignia",
-"Ancestral Spirit's Horn",
-"Morgott's Cursed Sword"
-];
+"Crusade Insignia"
+]
 
 legendaryList = [
 "Regal Omen Bairn",
@@ -834,18 +846,35 @@ legendaryList = [
 "Ruins Greatsword",
 "Dark Moon Greatsword",
 "Blasphemous Blade",
-"Crimson Amber Medallion +3",
-"Cerulean Amber Medallion +3",
-"Viridian Amber Medallion +3",
 "Great-Jar's Arsenal",
 "Dragoncrest Greatshield Talisman",
+"Graven-Mass Talisman",
+"Flock's Canvas Talisman",
+"Shard of Alexander",
+"Dagger Talisman",
+"Millicent's Prosthesis"
+];
+
+legendaryListDLC = [
+    
+"Stalwart Horn Charm +2",
+"Immunizing Horn Charm +2",
+"Clarifying Horn Charm +2",
+"Mottled Necklace +2",
+"Cerulean Amber Medallion +2",
+"Crimson Amber Medallion +2",
+"Viridian Amber Medallion +2",
+"Two-Handed Sword Talisman",
 "Spelldrake Talisman +3",
 "Flamedrake Talisman +3",
 "Boltdrake Talisman +3",
+"Crimson Amber Medallion +3",
+"Cerulean Amber Medallion +3",
+"Viridian Amber Medallion +3",
 "Golden Braid",
 "Pearldrake Talisman +3",
 "Erdtree's Favor +3",
-"Mimic Veil",
+"Mimic's Veil",
 "Rellana's Twin Blades",
 "Greatsword of Radahn (Light)",
 "Greatsword of Radahn (Lord)",
@@ -855,20 +884,7 @@ legendaryList = [
 "Rock Heart",
 "Priestess Heart",
 "Lamenter's Mask",
-"Two-Headed Turtle Talisman",
-"Graven-Mass Talisman",
-"Flock's Canvas Talisman",
-"Shard of Alexander",
-"Dagger Talisman",
-"Millicent's Prosthesis",
-"Stalwart Horn Charm +2",
-"Immunizing Horn Charm +2",
-"Clarifying Horn Charm +2",
-"Mottled Necklace +2",
-"Cerulean Amber Medallion +2",
-"Crimson Amber Medallion +2",
-"Viridian Amber Medallion +2",
-"Two-Handed Sword Talisman"
+"Two-Headed Turtle Talisman"
 ];
 
 armorList = [
@@ -1028,7 +1044,11 @@ armorList = [
 ["Vulgar Militia Set", ["Vulgar Militia Helm", "Vulgar Militia Armor", "Vulgar Militia Gauntlets", "Vulgar Militia Greaves"]],
 ["War Surgeon Set", ["White Mask", "War Surgeon Gown", "War Surgeon Gloves", "War Surgeon Trousers"]],
 ["", ["Witch's Glintstone Crown", "", "", ""]],
-["Zamor Set", ["Zamor Mask", "Zamor Armor", "Zamor Bracelets", "Zamor Legwraps"]],
+["Zamor Set", ["Zamor Mask", "Zamor Armor", "Zamor Bracelets", "Zamor Legwraps"]]
+];
+
+armorListDLC = [
+    
 ["Fire Knight Set", ["Fire Knight Helm", "Fire Knight Armor", "Fire Knight Gauntlets", "Fire Knight Greaves"]],
 ["Wego's Set", ["Death Mask Helm", "Fire Knight Armor", "Fire Knight Gauntlets", "Fire Knight Greaves"]],
 ["Salza's Set", ["Salza's Hood", "Fire Knight Armor", "Fire Knight Gauntlets", "Fire Knight Greaves"]],
@@ -1167,7 +1187,10 @@ miracleList = [
 "Urgent Heal",
 "Vyke's Dragonbolt",
 "Whirl, O Flame!",
-"Wrath of Gold",
+"Wrath of Gold"
+];
+
+miracleListDLC = [
 "Furious Blade of Ansbach",
 "Heal From Afar",
 "Aspects of the Crucible: Thorns",
@@ -1196,7 +1219,7 @@ miracleList = [
 "Golden Arcs",
 "Giant Golden Arc",
 "Spira"
-];
+]
 
 spellList = [
 "Adula's Moonblade",
@@ -1269,7 +1292,10 @@ spellList = [
 "Tibia's Summons",
 "Unseen Blade",
 "Unseen Form",
-"Zamor Ice Storm",
+"Zamor Ice Storm"
+];
+
+spellListDLC = [
 "Miriam's Vanishing",
 "Glintblade Trio",
 "Rellana's Twin Moons",
@@ -1284,7 +1310,7 @@ spellList = [
 "Mass of Putrescence",
 "Fleeting Microcosm",
 "Cherishing Fingers"
-];
+]
 
 ashOfWarList = [
 "Ash of War: Stamp (Upward Cut)",
@@ -1377,7 +1403,10 @@ ashOfWarList = [
 "Ash of War: Barricade Shield",
 "Ash of War: Thops's Barrier",
 "Ash of War: Carian Retaliation",
-"Ash of War: No Skill",
+"Ash of War: No Skill"
+];
+
+ashOfWarListDLC = [
 "Ash of War: Dryleaf Whirlwind",
 "Ash of War: Aspects of the Crucible: Wings",
 "Ash of War: Spinning Gravity Thrust",
@@ -1403,7 +1432,7 @@ ashOfWarList = [
 "Ash of War: The Poison Flower Blooms Twice",
 "Ash of War: Igon's Drake Hunt",
 "Ash of War: Shield Strike"
-]
+];
 
 
 misfortuneList = [
