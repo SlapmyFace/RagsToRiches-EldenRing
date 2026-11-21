@@ -359,15 +359,41 @@ function useReward(rarity) {
 
     decreaseValue(rarity);
 
-    currentMisfortunes.push(["Add: " + randomItem, "Add the following items to your repertoire: " + randomItem, 1]);
+    currentMisfortunes.push(["Add the following items to your repertoire: " + randomItem, "Add:" + randomItem, 1]);
 
     fillEffect();
-	if (rarity == "armor" || rarity == "weapon" || rarity == "spell" || rarity == "legendary" || rarity == "talisman")
+	if (rarity == "weapon" || rarity == "spell" || rarity == "legendary" || rarity == "talisman")
 	{
 		fillCard(imgType, randomItem, randomItem, randomItem);
 	}
 	else if (rarity == "consumable") {
 		fillCard(imgType, randomItem, randomItem, randomItem.replace(/\s*(?:\(\d+x\)|\d+)$/, ""));
+	}
+	else if (rarity == "armor") {
+	
+		let wikiSearchterm = ""
+			
+		const anyPiece = item.match(/^Any piece of .+?:\s*(.+)$/i);
+	    if (anyPiece) {
+	        const pieces = anyPiece[1].split(",").map(piece => piece.trim());
+	        wikiSearchterm = pieces[Math.floor(Math.random() * pieces.length)];
+	    } 
+		else {
+			const completeSet = item.match(/^complete (.+?):/i);
+		    if (completeSet) {
+		        wikiSearchterm = completeSet[1].trim();
+		    } 
+			else {
+			    const specificPiece = item.match(/^.+?:\s*(.+)$/);
+			    if (specificPiece) {
+			        wikiSearchterm = specificPiece[1].trim();
+			    } else {
+					wikiSearchterm = item.trim();
+				}
+			}
+		}
+	
+		fillCard(imgType, randomItem, randomItem, wikiSearchterm);
 	}
 	else {
 		fillCard(imgType, randomItem, randomItem);
