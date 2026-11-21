@@ -1,3 +1,5 @@
+Updated with Tarnished Edition Items!
+
 This is a Rags To Riches type of mini game for Elden Ring PVP. You start with basic gear and win more stuff by winning matches / killing enemies in PVP. 
 
 Plus, it has a "misfortune" system, which are penalties on losses that include stashing some weapons or armor, but also include fun little challenges like going naked for one match or using parries to kill enemies that reward you if you do them right.
