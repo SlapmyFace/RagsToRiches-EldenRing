@@ -359,12 +359,15 @@ function useReward(rarity) {
 
     decreaseValue(rarity);
 
-    currentMisfortunes.push(["Add: " + randomItem, "Add: " + randomItem, 1]);
+    currentMisfortunes.push(["Add: " + randomItem, "Add the following items to your repertoire: " + randomItem, 1]);
 
     fillEffect();
 	if (rarity == "armor" || rarity == "weapon" || rarity == "spell" || rarity == "legendary" || rarity == "talisman")
 	{
 		fillCard(imgType, randomItem, randomItem, randomItem);
+	}
+	else if (rarity == "consumable") {
+		fillCard(imgType, randomItem, randomItem, randomItem.replace(/\s*(?:\(\d+x\)|\d+)$/, "");
 	}
 	else {
 		fillCard(imgType, randomItem, randomItem);
