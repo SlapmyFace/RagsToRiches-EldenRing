@@ -373,22 +373,22 @@ function useReward(rarity) {
 	
 		let wikiSearchterm = ""
 			
-		const anyPiece = item.match(/^Any piece of .+?:\s*(.+)$/i);
+		const anyPiece = randomItem.match(/^Any piece of .+?:\s*(.+)$/i);
 	    if (anyPiece) {
 	        const pieces = anyPiece[1].split(",").map(piece => piece.trim());
 	        wikiSearchterm = pieces[Math.floor(Math.random() * pieces.length)];
 	    } 
 		else {
-			const completeSet = item.match(/^complete (.+?):/i);
+			const completeSet = randomItem.match(/^complete (.+?):/i);
 		    if (completeSet) {
 		        wikiSearchterm = completeSet[1].trim();
 		    } 
 			else {
-			    const specificPiece = item.match(/^.+?:\s*(.+)$/);
+			    const specificPiece = randomItem.match(/^.+?:\s*(.+)$/);
 			    if (specificPiece) {
 			        wikiSearchterm = specificPiece[1].trim();
 			    } else {
-					wikiSearchterm = item.trim();
+					wikiSearchterm = randomItem.trim();
 				}
 			}
 		}
