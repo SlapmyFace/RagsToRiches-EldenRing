@@ -808,7 +808,7 @@ talismansList = [
 "Blessed Dew Talisman"
 ];
 
-talismanListDLC = [
+talismansListDLC = [
 "Talisman of Lord's Bestowal",
 "Dried Bouquet",
 "Ailment Talisman",
