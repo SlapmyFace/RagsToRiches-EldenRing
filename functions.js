@@ -292,7 +292,7 @@ function useReward(rarity) {
             if (getValue("CraftingMaterials")) {
                 list = craftingMaterialsList;
 				if (getValue("useDLC")) {
-            		list.push(...uncraftablesListDLC);
+            		list.push(...craftingMaterialsListDLC);
 				}
             }
             else {
