@@ -362,7 +362,7 @@ function useReward(rarity) {
     currentMisfortunes.push(["Add: " + randomItem, "Add: " + randomItem, 1]);
 
     fillEffect();
-	if (rarity == "armor" || rarity == "weapon" || rarity == "spell" || rarity == "legendary")
+	if (rarity == "armor" || rarity == "weapon" || rarity == "spell" || rarity == "legendary" || rarity == "talisman")
 	{
 		fillCard(imgType, randomItem, randomItem, randomItem);
 	}
