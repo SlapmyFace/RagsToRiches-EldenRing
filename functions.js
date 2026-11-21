@@ -374,10 +374,9 @@ function useReward(rarity) {
 		let wikiSearchterm = ""
 			
 		const anyPiece = randomItem.match(/^Any piece of [^:\n]+:\s*([\s\S]+)$/i)
-	    if (anyPiece) {
-	        const pieces = anyPiece[1].split(",").map(piece => piece.trim());
-	        wikiSearchterm = pieces[Math.floor(Math.random() * pieces.length)];
-	    } 
+		if (anyPiece) {
+		    wikiSearchterm = anyPiece[1].trim();
+		}
 		else {
 			const completeSet = randomItem.match(/^complete (.+?):/i);
 		    if (completeSet) {
