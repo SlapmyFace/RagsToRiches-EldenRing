@@ -253,6 +253,14 @@ craftingMaterialsList = [
 ]
 
 weaponsList = [
+"Idus Sword",
+"Hefty Scimitar",
+"Reed Great Katana",
+"Leontiel's Greatsword",
+"Reverse-Bladed Sword",
+"Golden Order Flail",
+"Ritual Thrusting Shield",
+"Silver Grooved Shield",
 "Omen Bairn",
 "Wraith Calling Bell",
 "Ancestral Infant's Head",
@@ -864,6 +872,10 @@ legendaryList = [
 ];
 
 armorList = [
+    ["Silver Grooved Set", ["Silver Grooved Helm", "Silver Grooved Armor", "Silver Grooved Gauntlets", "Silver Grooved Greaves"]],
+    ["Steel Set", ["Steel Helm", "Steel Armor", "Steel Gauntlets", "Steel Greaves"]],
+    ["Leontiel's Set", ["Leontiel's Hat", "Leontiel's Armor", "Leontiel's Leather Gloves", "Leontiel's Boots"]],
+    ["Golden Order Set", ["Broken Gold Mask", "Gold Tattoo (Chest)", ""Gold Tattoo (Arm)", ""Gold Tattoo (Leg)"]],
     ["Alberich Set", ["Alberich's Pointed Hat", "Alberich's Robe", "Alberich's Bracers", "Alberich's Trousers"]],
 ["Albinauric Set", ["Albinauric Mask", "Dirty Chainmail", "", ""]],
 ["All-Knowing Set", ["All-Knowing Helm", "All-Knowing Armor", "All-Knowing Gauntlets", "All-Knowing Greaves"]],
